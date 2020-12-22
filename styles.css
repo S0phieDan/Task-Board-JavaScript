@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans';
+}
+body{
+    background-image: url("tile.jpg");
+    background-repeat: repeat;
+}
+
+.title{
+    margin: 20px auto;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+.task_form{
+    width: 600px;
+    height: 260px;
+    margin: 20px auto;
+    padding-left: 80px;
+    padding-right: 20px;
+    padding-top: 25px;
+    background-image: url("formbg.jpg");
+    background-repeat: repeat-y;
+}
+
+.list_of_tasks{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: opac 0.8s;
+
+}
+
+.task{
+    /*margin: 0 auto;*/
+    width: 200px;
+    height: 250px;
+    padding-top: 20px;
+    background-image: url("notebg.png");
+}
+
+.inside-task{
+    width: 180px;
+    height: 150px;
+    padding-right: 10px;
+    padding-left: 10px;
+    overflow: auto;
+
+}
+
+.fa::before{
+    margin-left: 160px;
+}
+
+.task-date{
+    padding-left: 10px;
+}
+
+.new-task{
+    animation: opac 0.8s;
+}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
